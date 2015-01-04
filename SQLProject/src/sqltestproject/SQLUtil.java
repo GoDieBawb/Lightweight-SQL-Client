@@ -134,7 +134,7 @@ public class SQLUtil {
             
             try {
                 if (conn != null)
-                stmt.close();
+                conn.close();
             }
             
             catch (SQLException se2) {
